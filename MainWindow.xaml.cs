@@ -9,18 +9,12 @@ using System.Windows;
     {
 
 
-        private void SortAscending_Click(object sender, RoutedEventArgs e)
+        // Очистить список
+        private void ClearList_Click(object sender, RoutedEventArgs e)
         {
-            numbers.Sort();
+            numbers.Clear();
             UpdateListBox();
         }
 
-        // Отсортировать по убыванию
-        private void SortDescending_Click(object sender, RoutedEventArgs e)
-        {
-            numbers.Sort();
-            numbers.Reverse();
-            UpdateListBox();
-        }
 
     }
