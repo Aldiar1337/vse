@@ -6,8 +6,7 @@ using System.Windows;
 
 namespace WpfApp1
 {
-    public partial class MainWindow : Window
-    {
+    
 
         List<int> numbers = new List<int>();
 
@@ -59,7 +58,7 @@ namespace WpfApp1
 
         }
     }
-}
+
         
          
 
