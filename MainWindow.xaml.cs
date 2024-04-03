@@ -4,10 +4,9 @@ using System.Linq;
 using System.Windows;
 
 
-
-    public partial class MainWindow : Window
-    {
-
+namespace WpfApp1
+{
+   
         List<int> numbers = new List<int>();
 
         private void AddNumber_Click(object sender, RoutedEventArgs e)
@@ -57,8 +56,8 @@ using System.Windows;
             numberListBox.ItemsSource = numbers;
 
         }
-    }
-
+    
+}
         
          
 
