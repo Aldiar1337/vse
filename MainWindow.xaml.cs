@@ -6,9 +6,6 @@ using System.Windows;
 
 namespace WpfApp1
 {
-
-
-
     public partial class MainWindow : Window
     {
 
@@ -40,10 +37,7 @@ namespace WpfApp1
                 MessageBox.Show("Пожалуйста, введите множитель.");
             }
         }
-
-
-
-
+        
         private void SortAscending_Click(object sender, RoutedEventArgs e)
         {
             numbers.Sort();
