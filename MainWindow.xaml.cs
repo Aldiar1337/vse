@@ -4,7 +4,10 @@ using System.Linq;
 using System.Windows;
 
 
-
+namespace WpfApp1
+{
+    public partial class MainWindow : Window
+    {
 
         List<int> numbers = new List<int>();
 
@@ -55,7 +58,8 @@ using System.Windows;
             numberListBox.ItemsSource = numbers;
 
         }
-    
-  
+    }
+}
+        
          
 
