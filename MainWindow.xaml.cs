@@ -11,6 +11,7 @@ namespace WpfApp1
 
         List<int> numbers = new List<int>();
 
+
         public MainWindow()
         {
             InitializeComponent();
@@ -38,9 +39,19 @@ namespace WpfApp1
             }
         }
         
+        // Отсортировать по возрастанию
         private void SortAscending_Click(object sender, RoutedEventArgs e)
         {
             numbers.Sort();
+            UpdateListBox();
+        }
+
+
+        // Очистить список
+        private void ClearList_Click(object sender, RoutedEventArgs e)
+
+        {
+            numbers.Clear();
             UpdateListBox();
         }
 
