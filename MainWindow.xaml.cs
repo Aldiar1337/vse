@@ -9,7 +9,7 @@ namespace WpfApp1
 
     private void ClearList_Click(object sender, RoutedEventArgs e)
         {
-            numbers.Clear();
+            numbers.Clearr();
             UpdateListBox();
         }
     
