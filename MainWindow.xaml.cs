@@ -8,42 +8,25 @@ namespace WpfApp1
 {
     public partial class MainWindow : Window
     {
-        List<int> numbers = new List<int>();
-
         private void AddNumber_Click(object sender, RoutedEventArgs e)
         {
             if (!string.IsNullOrEmpty(numberTextBox.Text))
-
             {
-                InitializeComponent();
-            }
-        }
-
-        private void MultiplyByFactor_Click(object sender, RoutedEventArgs e)
-            {
-                if (!string.IsNullOrEmpty(numberTextBox.Text))
+                if (int.TryParse(numberTextBox.Text, out int number))
                 {
-                    if (int.TryParse(numberTextBox.Text, out int factor))
-                    {
-                        numbers = numbers.Select(num => num * factor).ToList();
-                        UpdateListBox();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Пожалуйста, введите допустимый множитель.");
-                    }
+                    numbers.Add(number);
+                    UpdateListBox();
                 }
                 else
                 {
-                    MessageBox.Show("Пожалуйста, введите множитель.");
+                    MessageBox.Show("Пожалуйста, введите допустимое целое число».");
                 }
             }
-
-            private void UpdateListBox()
+            else
             {
-                numberListBox.ItemsSource = null;
-                numberListBox.ItemsSource = numbers;
+                MessageBox.Show("Пожалуйста, введите число.");
             }
         }
+
     }
 
