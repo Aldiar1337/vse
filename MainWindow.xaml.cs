@@ -5,22 +5,4 @@ using System.Windows;
 
 
 
-    public partial class MainWindow : Window
-    {
-
-
-        private void SortAscending_Click(object sender, RoutedEventArgs e)
-        {
-            numbers.Sort();
-            UpdateListBox();
-        }
-
-        // Отсортировать по убыванию
-        private void SortDescending_Click(object sender, RoutedEventArgs e)
-        {
-            numbers.Sort();
-            numbers.Reverse();
-            UpdateListBox();
-        }
-
-    }
+    
