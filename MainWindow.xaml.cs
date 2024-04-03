@@ -4,9 +4,7 @@ using System.Linq;
 using System.Windows;
 
 
-namespace WpfApp1
-{
-    
+
 
         List<int> numbers = new List<int>();
 
@@ -57,7 +55,7 @@ namespace WpfApp1
             numberListBox.ItemsSource = numbers;
 
         }
-    }
+
 
         
          
