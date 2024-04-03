@@ -24,7 +24,7 @@ namespace WpfApp1
             }
             else
             {
-                MessageBox.Show("Пожалуйста, введите число.");
+                MessageBox.Show("Пожалуйста, введите числолл.");
             }
         }
 
