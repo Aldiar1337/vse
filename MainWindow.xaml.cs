@@ -6,7 +6,9 @@ using System.Windows;
 
 namespace WpfApp1
 {
-   
+    public partial class MainWindow : Window
+    {
+
         List<int> numbers = new List<int>();
 
         private void AddNumber_Click(object sender, RoutedEventArgs e)
@@ -56,7 +58,7 @@ namespace WpfApp1
             numberListBox.ItemsSource = numbers;
 
         }
-    
+    }
 }
         
          
